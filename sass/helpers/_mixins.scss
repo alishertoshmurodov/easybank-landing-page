@@ -1,0 +1,12 @@
+@mixin mainBtn($brightness: 51%) {
+  color: $white;
+  background: linear-gradient(
+    140deg,
+    hsl(136, 65%, $brightness),
+    hsl(192, 70%, $brightness)
+  );
+  padding: 12px 30px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
