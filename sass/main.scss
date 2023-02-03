@@ -108,8 +108,15 @@ main {
       font-size: $body-font-size;
     }
     .banner__request-btn {
-      @extend .header__request-btn;
       width: fit-content;
+      a {
+        @include mainBtn;
+        &:hover,
+        &:focus {
+          @include mainBtn(61%);
+          transition-duration: 300ms;
+        }
+      }
     }
   }
   &__image {
@@ -301,9 +308,17 @@ main {
     }
   }
   &__request-btn {
-    @extend .header__request-btn;
+    
     width: fit-content;
     margin-bottom: 2rem;
+    a {
+      @include mainBtn;
+      &:hover,
+      &:focus {
+        @include mainBtn(61%);
+        transition-duration: 300ms;
+      }
+    }
   }
   &__copyright {
     color: $grayish-blue;
